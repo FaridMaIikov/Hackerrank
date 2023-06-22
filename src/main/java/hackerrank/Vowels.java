@@ -6,7 +6,7 @@ public class Vowels {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String word = sc.nextLine();
-        int findVowels=getFindVowels(word);
+        int findVowels = getFindVowels(word);
         System.out.println(findVowels);
 
     }
@@ -19,7 +19,6 @@ public class Vowels {
             if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u') {
                 count++;
             }
-
         }
         return count;
     }
