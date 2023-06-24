@@ -18,9 +18,9 @@ public class MiddleCharacter {
             char middleChar = str.charAt(middle - 1);
             System.out.println("Middle character: " + middleChar);
         } else {
-            char middleChar = str.charAt(middle);
-            char middleChar1 = str.charAt(middle + 1);
-            System.out.println("Middle character: " + middleChar + middleChar1);
+            char middleChar1 = str.charAt(middle);
+            char middleChar2 = str.charAt(middle + 1);
+            System.out.println("Middle character: " + middleChar1 + middleChar2);
         }
     }
 }
