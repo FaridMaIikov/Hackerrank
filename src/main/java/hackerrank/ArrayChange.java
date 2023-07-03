@@ -20,7 +20,7 @@ public class ArrayChange {
             String userInput = sc.nextLine();
 
             if (userInput.equals("exit")) {
-                System.out.println("Program end.");
+                System.out.println("Program end!");
                 break;
             }
 
