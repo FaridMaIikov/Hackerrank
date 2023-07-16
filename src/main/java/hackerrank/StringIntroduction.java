@@ -8,7 +8,7 @@ public class StringIntroduction {
         String a = sc.nextLine();
         String b = sc.nextLine();
 
-        System.out.println((a.concat(b).length())); //uzunluq
+        System.out.println((a.concat(b).length()));
 
 
 
