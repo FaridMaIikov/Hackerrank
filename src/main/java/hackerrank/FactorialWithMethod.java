@@ -1,5 +1,6 @@
 package hackerrank;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class FactorialWithMethod {
@@ -7,15 +8,18 @@ public class FactorialWithMethod {
         Scanner scanner = new Scanner(System.in);
         long n = scanner.nextLong();
         long start = System.currentTimeMillis();
-        long f = factorial(n);
+        BigDecimal f = factorial(n);
         long end = System.currentTimeMillis();
         System.out.println("Time " + (double) (end - start) / 1000);
         System.out.println(f);
     }
 
-    public static long factorial(long n) {
+    public static BigDecimal factorial(long n) {
         if (n == 0) {
-            return 1;
-        } else return (n * factorial(n - 1));
+            return BigDecimal.ONE;
+        } else {
+            BigDecimal result = BigDecimal.valueOf(n);
+            return result.multiply(factorial(n - 1));
+        }
     }
 }
