@@ -6,7 +6,7 @@ public class PentagonalNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-        int[] pentagonalNumbers = getPentagonalNumbers(10);
+        int[] pentagonalNumbers = getPentagonalNumbers(input);
 
         for (int nums : pentagonalNumbers) {
             System.out.println(nums);

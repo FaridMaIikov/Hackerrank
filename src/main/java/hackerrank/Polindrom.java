@@ -6,14 +6,11 @@ public class Polindrom {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String word= sc.nextLine();
-        String reversed="";
+        StringBuilder reversed = new StringBuilder();
 
-        for (int i = word.length()-1; i >=0 ; i--) {
-            if(word.length()>0){
-                reversed+=word.charAt(i);
-            }
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed.append(word.charAt(i));
         }
-        System.out.println(word.equals(reversed)?word+"-is polindrom":word+"-isnt polindrom");
-        //equalsIgnoreCase istifade ede bilerik
+        System.out.println(word.contentEquals(reversed) ? word + "-is polindrom" : word + "-isnt polindrom");
     }
 }

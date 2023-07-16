@@ -15,6 +15,5 @@ public class MethodOfSubstring {
             String restOfWord = word.substring(start, end);
             System.out.println(restOfWord);
         } else System.out.println("Enter word again!");
-        //System.out.println(word.substring(start,end));//short code
     }
 }
