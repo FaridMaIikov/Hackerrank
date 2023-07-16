@@ -14,6 +14,8 @@ public class ReversArray {
             array[i] = sc.nextInt();
         }
         System.out.println(Arrays.toString(array));
+
+
         reversArray(array);
 
     }
@@ -21,7 +23,10 @@ public class ReversArray {
     public static void reversArray(int[] array) {
         System.out.print("[");
         for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
+            if (i == 0) {
+                System.out.print(array[i]);
+            } else System.out.print(array[i] + ", ");
+
         }
         System.out.print("]");
     }
