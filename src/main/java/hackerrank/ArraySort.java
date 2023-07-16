@@ -14,9 +14,9 @@ public class ArraySort {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[i]) {//5<3
+                if (arr[j] < arr[i]) {//12<10
                     temp = arr[i];//temp=10
-                    arr[i] = arr[j];//arr[i]=3
+                    arr[i] = arr[j];//arr[i]=12
                     arr[j] = temp;//arr[j]=10
                 }
             }
