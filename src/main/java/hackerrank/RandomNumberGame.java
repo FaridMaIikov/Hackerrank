@@ -12,9 +12,9 @@ public class RandomNumberGame {
         System.out.print("Enter name:");
         String name = sc.nextLine();
         System.out.println("Let's start the game " + name);
-        int randomNumber = (int) (Math.random() * 100);
 
         while (true) {
+            int randomNumber = (int) (Math.random() * 100);
             System.out.print("Enter between 0 and 100:");
             int number = sc.nextInt();
 
